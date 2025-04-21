@@ -1,31 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>NLP-project</title>
-  </head>
-  <body>
-    <header>
-      <h1>Natural Language Processing APP</h1>
-    </header>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>NLP analysis App</title>
+        <link rel="stylesheet" href="main.css"> 
+    </head>
 
-    <main>
-      <form id="nlpForm">
-        <label for="url">Enter URL to Analyze:</label>
-        <input type="text" id="url" name="url" placeholder="https://example.com" required>
-        <button type="submit">Analyze</button>
-      </form>
-<section id="results">
-  <!--Results will be here-->
-  </section>
+    <body>
 
+        <header>
+            <div class="logo">
+                NLP analysis application
+            </div>
+            <div class="navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>  
+            </div>
+        </header>
 
-    </main>
+        <main>
+            <section>
+                <form id="urlForm">
+                    <input id="url" type="text" name="url" placeholder="Enter a Blog post url" required>
+                    <button id="submitButton" type="submit">Analysis</button>
+                </form>
+                
+            </section>
 
+            <section>
+                <strong>Form Results:</strong>
+                <div id="results">
+                    <p id="sentiment"></p>
+                    <p id="contentType"></p>
+                    <p id="textPreview"></p>
+                </div>
+                
+            </section>
+        </main>
 
-    <footer>
-      <p>@copyright reserved 2025</p>
-    </footer>
-  </body>
+        <footer>
+            <p>&copy; 2025 NLP Analysis Application</p>
+            <p><a href="#about">About Us</a> | <a href="#contact">Contact</a></p>
+        </footer>
+       
+
+    </body>
 </html>
